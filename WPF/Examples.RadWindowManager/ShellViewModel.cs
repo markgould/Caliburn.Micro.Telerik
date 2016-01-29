@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Composition;
 using Caliburn.Micro;
+using Caliburn.Micro.Telerik;
 
 namespace Examples.TelerikWindowManager
 {

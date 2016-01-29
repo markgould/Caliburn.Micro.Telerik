@@ -5,10 +5,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Navigation;
-using Caliburn.Micro.Telerik;
 using Telerik.Windows.Controls;
 
-namespace Caliburn.Micro
+namespace Caliburn.Micro.Telerik
 {
 	public class TelerikWindowManager : WindowManager
 	{
@@ -91,10 +90,7 @@ namespace Caliburn.Micro
 				{
 					var propertyInfo = type.GetProperty(pair.Key);
 
-					if (propertyInfo != null)
-					{
-						propertyInfo.SetValue(target, pair.Value, null);
-					}
+				    propertyInfo?.SetValue(target, pair.Value, null);
 				}
 
 				return true;
@@ -118,7 +114,7 @@ namespace Caliburn.Micro
 			{
 				var contentElement = view as FrameworkElement;
 				if (contentElement == null)
-					throw new ArgumentNullException("view");
+					throw new ArgumentNullException(nameof(view));
 
 				window = new RadWindow
 				{
@@ -226,8 +222,7 @@ namespace Caliburn.Micro
 					return;
 				}
 
-				if (onCancel != null)
-					onCancel();
+			    onCancel?.Invoke();
 			};
 			Confirm(dialogParameters);
 		}

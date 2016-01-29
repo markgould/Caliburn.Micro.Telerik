@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.Linq;
+using System.Windows;
 using Caliburn.Micro;
 using Caliburn.Micro.Telerik;
 using Telerik.Windows.Controls;
 
 namespace Examples.Conventions
 {
-	public class AppBootstrapper : Bootstrapper<IShell>
+	public class AppBootstrapper : BootstrapperBase
 	{
 		private CompositionContainer container;
+
+	    public AppBootstrapper()
+	    {
+	        Initialize();
+	    }
 
 		protected override void Configure()
 		{
@@ -49,7 +55,12 @@ namespace Examples.Conventions
 			return container.GetExportedValues<object>(AttributedModelServices.GetContractName(serviceType));
 		}
 
-		protected override void BuildUp(object instance)
+	    protected override void OnStartup(object sender, StartupEventArgs e)
+	    {
+	        DisplayRootViewFor<IShell>();
+	    }
+
+	    protected override void BuildUp(object instance)
 		{
 			container.SatisfyImportsOnce(instance);
 		}

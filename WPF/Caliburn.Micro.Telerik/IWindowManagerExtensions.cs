@@ -1,7 +1,7 @@
 using System;
 using Telerik.Windows.Controls;
 
-namespace Caliburn.Micro
+namespace Caliburn.Micro.Telerik
 {
 	public static class IWindowManagerExtensions
 	{
