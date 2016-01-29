@@ -2,21 +2,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Caliburn.Micro.Telerik</id>
-    <version>2.1.9</version>
-    <authors>Valeriu Caraulean</authors>
+    <version>3.0.0</version>
+    <authors>Valeriu Caraulean, Mark Gould</authors>
     <owners>Valeriu Caraulean</owners>
-    <projectUrl>https://github.com/vcaraulean/Caliburn.Micro.Telerik</projectUrl>
+    <projectUrl>https://github.com/markgould/Caliburn.Micro.Telerik</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Caliburn.Micro conventions for Telerik controls</summary>
     <description>
       Integration of Caliburn.Micro with Telerik's controls: conventions, IWindowManager implementation (TelerikWindowManager), extensions methods to IWindowManager: Alert, Confirm, Prompt. 
-      Target frameworks: Silverlight 5.0, WPF 4.
-      Source code with sample projects available at http://github.com/vcaraulean/Caliburn.Micro.Telerik .
+      Target frameworks: WPF 4.
+      Source code with sample projects available at https://github.com/markgould/Caliburn.Micro.Telerik.
     </description>
-    <tags>Caliburn.Micro Telerik Silverlight WPF SL40 SL50</tags>
+    <tags>Caliburn.Micro Telerik WPF</tags>
     <dependencies>
-      <dependency id="Caliburn.Micro" version="1.5.2" />
+      <dependency id="Caliburn.Micro" version="[3.0.0-beta2]" />
+      <dependency id="Telerik.Windows.Controls.Data.for.Wpf.45.Xaml" version="[2016.1.112]" />
+      <dependency id="Telerik.Windows.Controls.for.Wpf.45.Xaml" version="[2016.1.112]" />
+      <dependency id="Telerik.Windows.Controls.Input.for.Wpf.45.Xaml" version="[2016.1.112]" />
+      <dependency id="Telerik.Windows.Controls.Navigation.for.Wpf.45.Xaml" version="[2016.1.112]" />
+      <dependency id="Telerik.Windows.Data.for.Wpf.45.Xaml" version="[2016.1.112]" />
     </dependencies>
-	<releaseNotes>Updated to Caliburn.Micro 1.5.2</releaseNotes>
+	<releaseNotes>Updated to Caliburn.Micro 3.0.0-beta2 and Telerik 2016.1.112</releaseNotes>
   </metadata>
 </package>
