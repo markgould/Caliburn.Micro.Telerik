@@ -16,3 +16,5 @@ _ReSharper*
 
 nuget/package/lib/*
 nuget/package/*.nupkg
+
+packages
