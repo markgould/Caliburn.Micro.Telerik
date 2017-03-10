@@ -19,4 +19,8 @@
     </dependencies>
 	<releaseNotes>Updated to Caliburn.Micro 3.0.3. Removed dependency on specific Telerik packages</releaseNotes>
   </metadata>
+  <files>
+    <file src="..\..\WPF\Caliburn.Micro.Telerik\bin\$configuration$\Caliburn.Micro.Telerik.dll" target="lib\net40" />
+    <file src="..\..\WPF\Caliburn.Micro.Telerik\bin\$configuration$\Caliburn.Micro.Telerik.pdb" target="lib\net40" />
+  </files>
 </package>
