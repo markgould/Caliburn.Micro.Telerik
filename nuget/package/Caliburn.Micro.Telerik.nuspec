@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Caliburn.Micro.Telerik</id>
-    <version>3.1.0</version>
+    <version>3.1.1</version>
     <authors>Valeriu Caraulean, Mark Gould</authors>
     <owners>Valeriu Caraulean</owners>
     <projectUrl>https://github.com/markgould/Caliburn.Micro.Telerik</projectUrl>
